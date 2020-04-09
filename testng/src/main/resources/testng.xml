@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllTest">
+    <test name="baseTest" enabled="false">
+        <classes>
+            <class name="com.tsingxu.BaseAnnotation"></class>
+        </classes>
+    </test>
+    <test name="groupTest">
+        <groups>
+            <run>
+                <include name="A"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.tsingxu.GroupAnnotation">
+                <methods>
+                    <exclude name="testA2"></exclude>
+                </methods>
+            </class>
+            <class name="com.tsingxu.DependAnnotation"></class>
+        </classes>
+    </test>
+
+    <test name="dataProviderTest">
+        <groups>
+            <run>
+                <include name="consumer"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.tsingxu.DataProviderTest"></class>
+        </classes>
+    </test>
+
+    <!--配置监听器-->
+    <listeners>
+        <listener class-name="com.tsingxu.utils.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+</suite>

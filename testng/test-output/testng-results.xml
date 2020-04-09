@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AllTest" duration-ms="285" started-at="2020-04-08T09:21:19 CST" finished-at="2020-04-08T09:21:19 CST">
+    <groups>
+      <group name="A">
+        <method signature="GroupAnnotation.testA1()[pri:0, instance:com.tsingxu.GroupAnnotation@4de8b406]" name="testA1" class="com.tsingxu.GroupAnnotation"/>
+      </group> <!-- A -->
+      <group name="consumer">
+        <method signature="DataProviderTest.test(int, int)[pri:0, instance:com.tsingxu.DataProviderTest@d2cc05a]" name="test" class="com.tsingxu.DataProviderTest"/>
+      </group> <!-- consumer -->
+    </groups>
+    <test name="groupTest" duration-ms="37" started-at="2020-04-08T09:21:19 CST" finished-at="2020-04-08T09:21:19 CST">
+      <class name="com.tsingxu.GroupAnnotation">
+        <test-method status="PASS" signature="testA1()[pri:0, instance:com.tsingxu.GroupAnnotation@4de8b406]" name="testA1" duration-ms="5" started-at="2020-04-08T09:21:19 CST" finished-at="2020-04-08T09:21:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA1 -->
+      </class> <!-- com.tsingxu.GroupAnnotation -->
+    </test> <!-- groupTest -->
+    <test name="dataProviderTest" duration-ms="11" started-at="2020-04-08T09:21:19 CST" finished-at="2020-04-08T09:21:19 CST">
+      <class name="com.tsingxu.DataProviderTest">
+        <test-method status="PASS" signature="test(int, int)[pri:0, instance:com.tsingxu.DataProviderTest@d2cc05a]" name="test" duration-ms="3" started-at="2020-04-08T09:21:19 CST" data-provider="numbers" finished-at="2020-04-08T09:21:19 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(int, int)[pri:0, instance:com.tsingxu.DataProviderTest@d2cc05a]" name="test" duration-ms="0" started-at="2020-04-08T09:21:19 CST" data-provider="numbers" finished-at="2020-04-08T09:21:19 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(int, int)[pri:0, instance:com.tsingxu.DataProviderTest@d2cc05a]" name="test" duration-ms="1" started-at="2020-04-08T09:21:19 CST" data-provider="numbers" finished-at="2020-04-08T09:21:19 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.tsingxu.DataProviderTest -->
+    </test> <!-- dataProviderTest -->
+  </suite> <!-- AllTest -->
+</testng-results>
